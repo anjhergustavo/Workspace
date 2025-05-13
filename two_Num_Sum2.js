@@ -9,7 +9,7 @@
   /** Sample input  = [3, 5, -4, 8, 11, 1, -1, 6] 
    * targetSum = 10
    * Sample output = [11, -1]
-   */
+   */ 
 
 // --- Parte 1: Recolección de datos y suma objetivo ---
 function recolectarNumeros() {
