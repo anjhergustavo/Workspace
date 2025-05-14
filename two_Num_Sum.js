@@ -9,9 +9,14 @@
   /** Sample input  = [3, 5, -4, 8, 11, 1, -1, 6] 
    * targetSum = 10
    * Sample output = [11, -1]
-   */ 
+   */
 
-// --- Parte 1: Recolección de datos y suma objetivo ---
+  /** En este primer script, uso la logica mas evidente y es un for double para 
+   * llegar a todos los posibles casos
+   */
+
+  /** **** **** **** **** **** **** *****/
+  /** Data and targetSum var */
 function recolectarNumeros() {
   let numeros = [];
   while (true) {
@@ -39,7 +44,8 @@ function pedirSumaObjetivo() {
   return suma;
 }
 
-// --- Parte 2: Verificación de la suma ---
+  /** **** **** **** **** **** **** *****/
+  /** Method development. Option 1: a double For */
 function buscarParejaQueSume(numeros, objetivo) {
   for (let i = 0; i < numeros.length; i++) {
     for (let j = i + 1; j < numeros.length; j++) {
@@ -51,7 +57,8 @@ function buscarParejaQueSume(numeros, objetivo) {
   return []; // No se encontró ninguna pareja
 }
 
-// --- Programa principal ---
+  /** **** **** **** **** **** **** *****/
+  /** Main program */
 function programaPrincipal() {
   let numeros = recolectarNumeros();
   let objetivo = pedirSumaObjetivo();
@@ -63,5 +70,6 @@ function programaPrincipal() {
     alert("[]");
   }
 }
-
-programaPrincipal(); // Ejecutar todo
+  /** **** **** **** **** **** **** *****/
+  /** Running it */
+programaPrincipal(); 
